@@ -26,3 +26,7 @@ Place your PDF at `public/final.pdf` and your claim data at `public/data.json`.
 - Vite 7
 - Tailwind CSS 4
 - react-pdf
+
+## Assignment Context
+
+This project was built as part of a frontend evaluation assignment. The focus was on clean React structure, handling nested JSON data, and building a clear, reviewer-friendly UI rather than adding unnecessary complexity.
