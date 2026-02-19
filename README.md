@@ -2,6 +2,8 @@
 
 A side-by-side medical claim review tool built with React and Vite. Auditors can inspect a scanned PDF claim document on the left while reviewing the extracted & analyzed data on the right.
 
+**Live Demo:** [https://claim-review-dashboard.vercel.app/](https://claim-review-dashboard.vercel.app/)
+
 ## Features
 
 - **PDF Viewer** — Navigate pages and zoom in/out to inspect the original claim document
