@@ -22,8 +22,7 @@ Place your PDF at `public/final.pdf` and your claim data at `public/data.json`.
 
 ## Tech Stack
 
-- React 19
-- Vite 7
+- React (Vite)
 - Tailwind CSS 4
 - react-pdf
 
