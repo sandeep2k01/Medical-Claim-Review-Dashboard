@@ -20,7 +20,7 @@ function BillsTable({ bills, onPageClick }) {
 
                     return (
                         <div key={bill.bill_id} className="transition-colors hover:bg-slate-50/30">
-                            {/* Bill Header */}
+
                             <button
                                 onClick={() => setExpandedBill(isExpanded ? -1 : index)}
                                 className="w-full flex items-center justify-between px-6 py-4 text-left"
@@ -45,7 +45,7 @@ function BillsTable({ bills, onPageClick }) {
                                 </div>
                             </button>
 
-                            {/* Bill Items Table */}
+
                             {isExpanded && (
                                 <div className="px-6 pb-6 pt-2 bg-slate-50/50">
                                     <div className="bg-white rounded border border-slate-200 overflow-hidden">

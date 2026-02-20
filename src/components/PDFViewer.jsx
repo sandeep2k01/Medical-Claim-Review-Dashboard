@@ -18,7 +18,7 @@ export default function PDFViewer({ pageNumber, onPageChange }) {
 
     return (
         <div className="flex flex-col h-full bg-slate-100">
-            {/* Simple Toolbar */}
+
             <div className="flex items-center justify-between px-6 py-3 bg-white border-b border-slate-200">
                 <div className="flex items-center gap-4">
                     <button
@@ -47,7 +47,7 @@ export default function PDFViewer({ pageNumber, onPageChange }) {
                 </div>
             </div>
 
-            {/* Document Content */}
+
             <div className="flex-1 overflow-auto p-10 flex justify-center">
                 <Document
                     file="/final.pdf"

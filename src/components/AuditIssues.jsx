@@ -8,14 +8,14 @@ function AuditIssues({ audit }) {
     return (
         <div className="space-y-6">
 
-            {/* Summary Counts */}
+
             <div className="grid grid-cols-3 gap-3">
                 <CountCard label="Bills Reviewed" value={audit.bills_analyzed} />
                 <CountCard label="Legibility Issues" value={audit.medical_legibility_issues} warn />
                 <CountCard label="Policy Violations" value={audit.policy_violations_count} warn />
             </div>
 
-            {/* Medical Legibility */}
+
             <div className="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
                 <h2 className="text-base font-bold text-slate-800 mb-4 pb-2 border-b border-slate-100">
                     Medical Legibility Check
@@ -33,7 +33,7 @@ function AuditIssues({ audit }) {
                 )}
             </div>
 
-            {/* Policy Violations */}
+
             {violations.length > 0 && (
                 <div className="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
                     <h2 className="text-base font-bold text-slate-800 mb-4 pb-2 border-b border-slate-100">
@@ -61,7 +61,7 @@ function AuditIssues({ audit }) {
                 </div>
             )}
 
-            {/* ICD Codes */}
+
             {icdCodes.length > 0 && (
                 <div className="bg-white rounded-lg border border-slate-200 p-6 shadow-sm">
                     <h2 className="text-base font-bold text-slate-800 mb-4 pb-2 border-b border-slate-100">
@@ -72,8 +72,8 @@ function AuditIssues({ audit }) {
                             <div
                                 key={i}
                                 className={`px-3 py-2 rounded-lg border flex flex-col ${icd.type === 'primary'
-                                        ? 'bg-blue-600 border-blue-700 text-white'
-                                        : 'bg-white border-slate-200 text-slate-700'
+                                    ? 'bg-blue-600 border-blue-700 text-white'
+                                    : 'bg-white border-slate-200 text-slate-700'
                                     }`}
                             >
                                 <span className="text-xs font-mono font-bold">{icd.code}</span>
@@ -101,8 +101,8 @@ function CountCard({ label, value, warn }) {
 function StatusBox({ label, isValid }) {
     return (
         <div className={`flex-1 flex items-center justify-between p-3 rounded border ${isValid
-                ? 'bg-emerald-50 border-emerald-100 text-emerald-700'
-                : 'bg-red-50 border-red-100 text-red-700'
+            ? 'bg-emerald-50 border-emerald-100 text-emerald-700'
+            : 'bg-red-50 border-red-100 text-red-700'
             }`}>
             <span className="text-xs font-bold uppercase tracking-wide">{label}</span>
             <span className="text-base font-bold">{isValid ? '✓' : '✕'}</span>

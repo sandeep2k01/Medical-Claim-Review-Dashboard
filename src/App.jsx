@@ -50,7 +50,6 @@ function App() {
 
   return (
     <div className="flex flex-col h-screen bg-slate-50">
-      {/* Simple Header */}
       <header className="bg-slate-800 text-white px-6 py-4 flex items-center justify-between shadow-md">
         <div>
           <h1 className="text-xl font-bold">Medical Claim Review</h1>
@@ -70,9 +69,7 @@ function App() {
         </div>
       </header>
 
-      {/* Main Container */}
       <div className="flex flex-1 overflow-hidden">
-        {/* Left: PDF Viewer */}
         <div className="w-1/2 bg-slate-200 border-r border-slate-300">
           <PDFViewer
             pageNumber={currentPage}
@@ -80,9 +77,7 @@ function App() {
           />
         </div>
 
-        {/* Right: Data Panels */}
         <div className="w-1/2 flex flex-col">
-          {/* Tab Navigation */}
           <div className="flex border-b border-slate-200 bg-white shadow-sm">
             {tabs.map((tab) => (
               <button
@@ -99,7 +94,6 @@ function App() {
             ))}
           </div>
 
-          {/* Scrollable Content Area */}
           <div className="flex-1 overflow-auto p-6 space-y-6">
             {activeTab === 'summary' && (
               <div className="space-y-6">
