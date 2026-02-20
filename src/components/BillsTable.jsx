@@ -71,7 +71,7 @@ function BillsTable({ bills, onPageClick }) {
                                                                 : <span className="text-emerald-500 font-black">✓</span>
                                                             }
                                                         </td>
-                                                        <td className="px-4 py-3 text-slate-500 max-w-[200px] whitespace-normal italic">
+                                                        <td className="px-4 py-3 text-slate-500 max-w-50 whitespace-normal italic">
                                                             {item.deduction_reason || '—'}
                                                         </td>
                                                     </tr>
